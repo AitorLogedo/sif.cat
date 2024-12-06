@@ -1,6 +1,6 @@
 baseURL = "sif.cat"
 languageCode = 'en-us'
-theme = "coming-soon"
+theme = "glim-midnight"
 
 [params]
     title = "asd" 
@@ -8,7 +8,7 @@ theme = "coming-soon"
     favicon = ""
     message = "COMING SOON!" 
     release = "June 30, 2024" 
-    background = "" 
+    background = "bg.mp4" 
 
 socialIcons = [
     {name = "email", url = "example@example.com"},      
