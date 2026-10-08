@@ -125,6 +125,9 @@
     100% { border-color: var(--line); box-shadow: none; }
   }
   .linkme { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-dl { display: block; line-height: 0; padding: 0; border: 0; text-decoration: none; transition: transform .1s, filter .1s; }
+  .btn-dl:hover { background: none; transform: translateY(-2px); filter: drop-shadow(0 0 6px rgba(0, 229, 255, .6)); }
+  .btn-dl:active { transform: translateY(0); }
   .linkme img { width: 88px; height: 31px; image-rendering: pixelated; display: block; }
   .linkme code {
     flex: 1 1 260px;
@@ -202,9 +205,9 @@
 
   <div class="box" id="link-me">
     <h2>link me</h2>
-    <p class="linkme-note">want to link to this site? use this button:</p>
+    <p class="linkme-note">want to link to this site? click the button to download it, or copy the code:</p>
     <div class="linkme">
-      <img src="button.svg" width="88" height="31" alt="sif.cat">
+      <a class="btn-dl" href="button.svg" download="sifcat-88x31.svg" title="download the button"><img src="button.svg" width="88" height="31" alt="sif.cat"></a>
       <code>&lt;a href="https://sif.cat"&gt;&lt;img src="https://sif.cat/button.svg" width="88" height="31" alt="sif.cat"&gt;&lt;/a&gt;</code>
     </div>
   </div>
