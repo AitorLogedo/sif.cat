@@ -135,13 +135,33 @@
     border: 1px solid;
     flex: none;
   }
-  .b88.cachy { background: #0b2b2a; color: #00e0b0; border-color: #00e0b0; }
-  .b88.kde   { background: #1d99f3; color: #fff; border-color: #0b5c93; }
-  .b88.linux { background: #f5c400; color: #000; border-color: #8a6e00; }
-  .b88.ss13  { background: #1a1f3a; color: #9ec1ff; border-color: #4b5fa8; }
-  .b88.gh    { background: #fff; color: #000; border-color: #888; }
-  .b88.any   { background: #000; color: #9f9; border-color: #3c3; }
-  .b88.nojs  { background: #3a0018; color: var(--pink); border-color: var(--pink); }
+  .b88 { position: relative; overflow: hidden; letter-spacing: .3px; }
+  .b88.monke { background: linear-gradient(#ffe14d, #f2b705); color: #4a2c00; border-color: #7a5200; }
+  .b88.honk {
+    background: repeating-linear-gradient(135deg, #ff3b3b 0 6px, #ff9f1a 6px 12px, #ffe14d 12px 18px, #38d36b 18px 24px, #3b8bff 24px 30px, #b44dff 30px 36px);
+    color: #fff; border-color: #fff; font-size: 13px;
+    text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
+  }
+  .b88.maxcap {
+    background: radial-gradient(circle at 22% 50%, #fffbd0 0, #ffd34d 12%, #ff8a00 28%, #c21b00 52%, #2a0000 80%);
+    color: #fff; border-color: #ff8a00; text-shadow: 0 0 3px #000, 0 0 1px #000;
+    animation: flicker 2.2s infinite;
+  }
+  @keyframes flicker { 0%, 100% { filter: brightness(1); } 45% { filter: brightness(1.25); } 50% { filter: brightness(.85); } 55% { filter: brightness(1.15); } }
+  .b88.singulo { background: #000; color: #ffcc66; border-color: #5a3d00; padding-left: 26px; }
+  .b88.singulo::before {
+    content: ""; position: absolute; left: 5px; top: 6px; width: 18px; height: 18px; border-radius: 50%;
+    background: radial-gradient(circle, #000 30%, transparent 32%), conic-gradient(#ffcc66, #ff6a00, #3a1a00, #ffcc66, #ff6a00, #3a1a00, #ffcc66);
+    animation: spin 1.6s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(1turn); } }
+  .b88.wine { background: linear-gradient(#6b1226, #2b0610); color: #ffc2cf; border-color: #a3243f; }
+  .b88.nvidia { background: #0d0d0d; color: #76b900; border-color: #76b900; }
+  .b88.democracy { background: repeating-linear-gradient(45deg, #ffe600 0 5px, #111 5px 10px); border-color: #ffe600; }
+  .b88.democracy span { background: #111; color: #ffe600; padding: 2px 4px; }
+  .b88.emperor { background: linear-gradient(#3a2a10, #140d03); color: #e8c75a; border-color: #c9a227; }
+  .b88.gruntz { background: linear-gradient(#3f8f2a, #1f5214); color: #fff; border-color: #9be36f; text-shadow: 1px 1px #0b2a06; }
+  @media (prefers-reduced-motion: reduce) { .b88.maxcap, .b88.singulo::before { animation: none; } }
 
   .linkme { margin-top: 16px; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
   .linkme img { width: 88px; height: 31px; image-rendering: pixelated; display: block; }
@@ -220,13 +240,15 @@
 
   <div class="box" id="link-me">
     <div class="buttons">
-      <span class="b88 cachy">cachyos</span>
-      <span class="b88 kde">kde plasma</span>
-      <span class="b88 linux">linux<br>user</span>
-      <span class="b88 ss13">space<br>station 13</span>
-      <span class="b88 gh">hosted on<br>github pages</span>
-      <span class="b88 any">best viewed<br>with any browser</span>
-      <span class="b88 nojs">no js<br>inside</span>
+      <span class="b88 monke">monke<br>station</span>
+      <span class="b88 honk">honk!</span>
+      <span class="b88 maxcap">maxcap<br>enjoyer</span>
+      <span class="b88 singulo">singulo<br>watcher</span>
+      <span class="b88 wine">runs byond<br>under wine</span>
+      <span class="b88 nvidia">nvidia +<br>wayland<br>survivor</span>
+      <span class="b88 democracy"><span>spread<br>democracy</span></span>
+      <span class="b88 emperor">the emperor<br>protects</span>
+      <span class="b88 gruntz">gruntz<br>en español</span>
     </div>
     <div class="linkme">
       <img src="button.svg" width="88" height="31" alt="sif.cat">
