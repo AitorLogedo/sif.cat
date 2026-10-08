@@ -136,32 +136,32 @@
     flex: none;
   }
   .b88 { position: relative; overflow: hidden; letter-spacing: .3px; }
-  .b88.monke { background: linear-gradient(#ffe14d, #f2b705); color: #4a2c00; border-color: #7a5200; }
-  .b88.honk {
-    background: repeating-linear-gradient(135deg, #ff3b3b 0 6px, #ff9f1a 6px 12px, #ffe14d 12px 18px, #38d36b 18px 24px, #3b8bff 24px 30px, #b44dff 30px 36px);
-    color: #fff; border-color: #fff; font-size: 13px;
-    text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
-  }
-  .b88.maxcap {
-    background: radial-gradient(circle at 22% 50%, #fffbd0 0, #ffd34d 12%, #ff8a00 28%, #c21b00 52%, #2a0000 80%);
-    color: #fff; border-color: #ff8a00; text-shadow: 0 0 3px #000, 0 0 1px #000;
-    animation: flicker 2.2s infinite;
-  }
-  @keyframes flicker { 0%, 100% { filter: brightness(1); } 45% { filter: brightness(1.25); } 50% { filter: brightness(.85); } 55% { filter: brightness(1.15); } }
-  .b88.singulo { background: #000; color: #ffcc66; border-color: #5a3d00; padding-left: 26px; }
-  .b88.singulo::before {
-    content: ""; position: absolute; left: 5px; top: 6px; width: 18px; height: 18px; border-radius: 50%;
-    background: radial-gradient(circle, #000 30%, transparent 32%), conic-gradient(#ffcc66, #ff6a00, #3a1a00, #ffcc66, #ff6a00, #3a1a00, #ffcc66);
-    animation: spin 1.6s linear infinite;
-  }
-  @keyframes spin { to { transform: rotate(1turn); } }
-  .b88.wine { background: linear-gradient(#6b1226, #2b0610); color: #ffc2cf; border-color: #a3243f; }
-  .b88.nvidia { background: #0d0d0d; color: #76b900; border-color: #76b900; }
-  .b88.democracy { background: repeating-linear-gradient(45deg, #ffe600 0 5px, #111 5px 10px); border-color: #ffe600; }
-  .b88.democracy span { background: #111; color: #ffe600; padding: 2px 4px; }
-  .b88.emperor { background: linear-gradient(#3a2a10, #140d03); color: #e8c75a; border-color: #c9a227; }
-  .b88.gruntz { background: linear-gradient(#3f8f2a, #1f5214); color: #fff; border-color: #9be36f; text-shadow: 1px 1px #0b2a06; }
-  @media (prefers-reduced-motion: reduce) { .b88.maxcap, .b88.singulo::before { animation: none; } }
+  .b88.paws { background: linear-gradient(#2a0f2e, #14061a); color: #ff9fcf; border-color: #ff6fb5; padding-left: 22px; }
+  .b88.paws::before { content: ""; position: absolute; left: 5px; top: 9px; width: 3px; height: 3px; box-shadow: 3px 0px #ff6fb5, 9px 0px #ff6fb5, 0px 3px #ff6fb5, 12px 3px #ff6fb5, 3px 6px #ff6fb5, 6px 6px #ff6fb5, 9px 6px #ff6fb5, 3px 9px #ff6fb5, 6px 9px #ff6fb5, 9px 9px #ff6fb5; }
+  .b88.meow { background: #000; color: var(--cyan); border-color: var(--cyan); font-size: 14px; padding-top: 4px; }
+  .b88.meow::before, .b88.meow::after { content: ""; position: absolute; top: -1px; width: 0; height: 0; border: 5px solid transparent; border-top-color: var(--cyan); }
+  .b88.meow::before { left: 6px; transform: rotate(180deg); top: -5px; }
+  .b88.meow::after { right: 6px; transform: rotate(180deg); top: -5px; }
+  .b88.approved { background: #f4efe2; border-color: #b9ad8f; }
+  .b88.approved span { color: #c8102e; border: 2px solid #c8102e; padding: 1px 3px; transform: rotate(-8deg); font-size: 7px; line-height: 1.1; opacity: .9; }
+  .b88.nodogs { background: #fff; color: #000; border-color: #c8102e; padding-left: 22px; }
+  .b88.nodogs::before { content: ""; position: absolute; left: 5px; top: 7px; width: 13px; height: 13px; border: 2px solid #c8102e; border-radius: 50%;
+    background: linear-gradient(45deg, transparent 44%, #c8102e 44% 58%, transparent 58%); }
+  .b88.lost { color: #fff; border-color: #4a5aa8;
+    background: radial-gradient(1px 1px at 10px 6px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 30px 22px, #9cf 50%, transparent 51%),
+      radial-gradient(1px 1px at 52px 9px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 75px 25px, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 66px 3px, #ccc 50%, transparent 51%), #060a24;
+    background-size: 88px 31px; animation: lost-drift 6s linear infinite; }
+  @keyframes lost-drift { to { background-position: -88px 0, -88px 0, -88px 0, -88px 0, -88px 0, 0 0; } }
+  .b88.stargazer { background: linear-gradient(#3b1a6b, #10093a); color: #e6dcff; border-color: #8b6cff; padding-left: 16px; }
+  .b88.stargazer::before { content: "\2605"; position: absolute; left: 6px; top: 7px; color: #ffe680; font: 12px/1 sans-serif; animation: star-pulse 1.8s ease-in-out infinite; }
+  @keyframes star-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.8); } }
+  .b88.houston { background: #0b3d91; color: #fff; border-color: #fc3d21; font-size: 7px; line-height: 1.15; box-shadow: inset 0 -3px #fc3d21; }
+  .b88.spacecat { background: radial-gradient(1px 1px at 70px 6px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 80px 24px, #fff 50%, transparent 51%), #000;
+    color: #ffd27a; border-color: #ffd27a; padding-left: 24px; }
+  .b88.spacecat::before { content: ""; position: absolute; left: 8px; top: 9px; width: 12px; height: 12px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ffd27a, #c46b00); }
+  .b88.spacecat::after { content: ""; position: absolute; left: 3px; top: 13px; width: 22px; height: 4px; border: 1px solid #ffe9b8; border-radius: 50%; transform: rotate(-18deg); }
+  @media (prefers-reduced-motion: reduce) { .b88.lost, .b88.stargazer::before { animation: none; } }
 
   .linkme { margin-top: 16px; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
   .linkme img { width: 88px; height: 31px; image-rendering: pixelated; display: block; }
@@ -201,7 +201,7 @@
   <header class="box">
     <div>
       <h1 class="title">sif.cat</h1>
-      <p class="tagline">sif's little corner of the internet<br>space station enjoyer, linux tinkerer, occasional coder</p>
+      <p class="tagline">sif's little corner of the internet</p>
       <p class="motd">motd: under construction, as every good website should be<span class="blink">_</span></p>
     </div>
     <svg class="cat" viewBox="-1 -1 14 13" shape-rendering="crispEdges" role="img" aria-label="pixel cat"><g fill="#00e5ff"><rect x="0" y="0" width="1" height="1"/><rect x="11" y="0" width="1" height="1"/><rect x="0" y="1" width="1" height="1"/><rect x="1" y="1" width="1" height="1"/><rect x="10" y="1" width="1" height="1"/><rect x="11" y="1" width="1" height="1"/><rect x="0" y="2" width="1" height="1"/><rect x="1" y="2" width="1" height="1"/><rect x="2" y="2" width="1" height="1"/><rect x="9" y="2" width="1" height="1"/><rect x="10" y="2" width="1" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="0" y="3" width="1" height="1"/><rect x="1" y="3" width="1" height="1"/><rect x="2" y="3" width="1" height="1"/><rect x="3" y="3" width="1" height="1"/><rect x="4" y="3" width="1" height="1"/><rect x="5" y="3" width="1" height="1"/><rect x="6" y="3" width="1" height="1"/><rect x="7" y="3" width="1" height="1"/><rect x="8" y="3" width="1" height="1"/><rect x="9" y="3" width="1" height="1"/><rect x="10" y="3" width="1" height="1"/><rect x="11" y="3" width="1" height="1"/><rect x="0" y="4" width="1" height="1"/><rect x="1" y="4" width="1" height="1"/><rect x="2" y="4" width="1" height="1"/><rect x="3" y="4" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="5" y="4" width="1" height="1"/><rect x="6" y="4" width="1" height="1"/><rect x="7" y="4" width="1" height="1"/><rect x="8" y="4" width="1" height="1"/><rect x="9" y="4" width="1" height="1"/><rect x="10" y="4" width="1" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="0" y="5" width="1" height="1"/><rect x="1" y="5" width="1" height="1"/><rect x="2" y="5" width="1" height="1"/><rect x="3" y="5" width="1" height="1"/><rect x="4" y="5" width="1" height="1"/><rect x="5" y="5" width="1" height="1"/><rect x="6" y="5" width="1" height="1"/><rect x="7" y="5" width="1" height="1"/><rect x="8" y="5" width="1" height="1"/><rect x="9" y="5" width="1" height="1"/><rect x="10" y="5" width="1" height="1"/><rect x="11" y="5" width="1" height="1"/><rect x="0" y="6" width="1" height="1"/><rect x="1" y="6" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="3" y="6" width="1" height="1"/><rect x="4" y="6" width="1" height="1"/><rect x="5" y="6" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/><rect x="7" y="6" width="1" height="1"/><rect x="8" y="6" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/><rect x="10" y="6" width="1" height="1"/><rect x="11" y="6" width="1" height="1"/><rect x="0" y="7" width="1" height="1"/><rect x="1" y="7" width="1" height="1"/><rect x="2" y="7" width="1" height="1"/><rect x="3" y="7" width="1" height="1"/><rect x="4" y="7" width="1" height="1"/><rect x="7" y="7" width="1" height="1"/><rect x="8" y="7" width="1" height="1"/><rect x="9" y="7" width="1" height="1"/><rect x="10" y="7" width="1" height="1"/><rect x="11" y="7" width="1" height="1"/><rect x="0" y="8" width="1" height="1"/><rect x="1" y="8" width="1" height="1"/><rect x="2" y="8" width="1" height="1"/><rect x="3" y="8" width="1" height="1"/><rect x="4" y="8" width="1" height="1"/><rect x="5" y="8" width="1" height="1"/><rect x="6" y="8" width="1" height="1"/><rect x="7" y="8" width="1" height="1"/><rect x="8" y="8" width="1" height="1"/><rect x="9" y="8" width="1" height="1"/><rect x="10" y="8" width="1" height="1"/><rect x="1" y="9" width="1" height="1"/><rect x="2" y="9" width="1" height="1"/><rect x="3" y="9" width="1" height="1"/><rect x="4" y="9" width="1" height="1"/><rect x="5" y="9" width="1" height="1"/><rect x="6" y="9" width="1" height="1"/><rect x="7" y="9" width="1" height="1"/><rect x="8" y="9" width="1" height="1"/><rect x="9" y="9" width="1" height="1"/><rect x="10" y="9" width="1" height="1"/><rect x="2" y="10" width="1" height="1"/><rect x="3" y="10" width="1" height="1"/><rect x="4" y="10" width="1" height="1"/><rect x="5" y="10" width="1" height="1"/><rect x="6" y="10" width="1" height="1"/><rect x="7" y="10" width="1" height="1"/><rect x="8" y="10" width="1" height="1"/><rect x="9" y="10" width="1" height="1"/></g><g fill="#ff4fa3"><rect x="5" y="7" width="1" height="1"/><rect x="6" y="7" width="1" height="1"/></g><g class="eyes" fill="#000"><rect x="2" y="5" width="1" height="1"/><rect x="3" y="5" width="1" height="1"/><rect x="8" y="5" width="1" height="1"/><rect x="9" y="5" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="3" y="6" width="1" height="1"/><rect x="8" y="6" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/></g></svg>
@@ -220,7 +220,6 @@
         <h2>currently</h2>
         <dl>
           <dt>playing</dt><dd>space station 13 / 14</dd>
-          <dt>running</dt><dd>cachyos + kde plasma</dd>
           <dt>breaking</dt><dd>whatever i touched last</dd>
         </dl>
       </section>
@@ -240,15 +239,14 @@
 
   <div class="box" id="link-me">
     <div class="buttons">
-      <span class="b88 monke">monke<br>station</span>
-      <span class="b88 honk">honk!</span>
-      <span class="b88 maxcap">maxcap<br>enjoyer</span>
-      <span class="b88 singulo">singulo<br>watcher</span>
-      <span class="b88 wine">runs byond<br>under wine</span>
-      <span class="b88 nvidia">nvidia +<br>wayland<br>survivor</span>
-      <span class="b88 democracy"><span>spread<br>democracy</span></span>
-      <span class="b88 emperor">the emperor<br>protects</span>
-      <span class="b88 gruntz">gruntz<br>en español</span>
+      <span class="b88 paws">powered<br>by cats</span>
+      <span class="b88 meow">meow</span>
+      <span class="b88 approved"><span>cat<br>approved</span></span>
+      <span class="b88 nodogs">no dogs<br>allowed</span>
+      <span class="b88 lost">lost in<br>space</span>
+      <span class="b88 stargazer">stargazer</span>
+      <span class="b88 houston">houston, we<br>have a<br>website</span>
+      <span class="b88 spacecat">space<br>cat</span>
     </div>
     <div class="linkme">
       <img src="button.svg" width="88" height="31" alt="sif.cat">
