@@ -116,54 +116,8 @@
   aside li::before { content: "> "; color: var(--dim); }
   aside .note { color: var(--dim); font-size: 12px; margin: 0; }
 
-  /* 88x31 buttons */
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-  }
-  .b88 {
-    width: 88px;
-    height: 31px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font: 8px/1.05 "Silkscreen", monospace;
-    text-transform: uppercase;
-    border: 1px solid;
-    flex: none;
-  }
-  .b88 { position: relative; overflow: hidden; letter-spacing: .3px; }
-  .b88.paws { background: linear-gradient(#2a0f2e, #14061a); color: #ff9fcf; border-color: #ff6fb5; padding-left: 22px; }
-  .b88.paws::before { content: ""; position: absolute; left: 5px; top: 9px; width: 3px; height: 3px; box-shadow: 3px 0px #ff6fb5, 9px 0px #ff6fb5, 0px 3px #ff6fb5, 12px 3px #ff6fb5, 3px 6px #ff6fb5, 6px 6px #ff6fb5, 9px 6px #ff6fb5, 3px 9px #ff6fb5, 6px 9px #ff6fb5, 9px 9px #ff6fb5; }
-  .b88.meow { background: #000; color: var(--cyan); border-color: var(--cyan); font-size: 14px; padding-top: 4px; }
-  .b88.meow::before, .b88.meow::after { content: ""; position: absolute; top: -1px; width: 0; height: 0; border: 5px solid transparent; border-top-color: var(--cyan); }
-  .b88.meow::before { left: 6px; transform: rotate(180deg); top: -5px; }
-  .b88.meow::after { right: 6px; transform: rotate(180deg); top: -5px; }
-  .b88.approved { background: #f4efe2; border-color: #b9ad8f; }
-  .b88.approved span { color: #c8102e; border: 2px solid #c8102e; padding: 1px 3px; transform: rotate(-8deg); font-size: 7px; line-height: 1.1; opacity: .9; }
-  .b88.nodogs { background: #fff; color: #000; border-color: #c8102e; padding-left: 22px; }
-  .b88.nodogs::before { content: ""; position: absolute; left: 5px; top: 7px; width: 13px; height: 13px; border: 2px solid #c8102e; border-radius: 50%;
-    background: linear-gradient(45deg, transparent 44%, #c8102e 44% 58%, transparent 58%); }
-  .b88.lost { color: #fff; border-color: #4a5aa8;
-    background: radial-gradient(1px 1px at 10px 6px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 30px 22px, #9cf 50%, transparent 51%),
-      radial-gradient(1px 1px at 52px 9px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 75px 25px, #fff 50%, transparent 51%),
-      radial-gradient(1px 1px at 66px 3px, #ccc 50%, transparent 51%), #060a24;
-    background-size: 88px 31px; animation: lost-drift 6s linear infinite; }
-  @keyframes lost-drift { to { background-position: -88px 0, -88px 0, -88px 0, -88px 0, -88px 0, 0 0; } }
-  .b88.stargazer { background: linear-gradient(#3b1a6b, #10093a); color: #e6dcff; border-color: #8b6cff; padding-left: 16px; }
-  .b88.stargazer::before { content: "\2605"; position: absolute; left: 6px; top: 7px; color: #ffe680; font: 12px/1 sans-serif; animation: star-pulse 1.8s ease-in-out infinite; }
-  @keyframes star-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.8); } }
-  .b88.houston { background: #0b3d91; color: #fff; border-color: #fc3d21; font-size: 7px; line-height: 1.15; box-shadow: inset 0 -3px #fc3d21; }
-  .b88.spacecat { background: radial-gradient(1px 1px at 70px 6px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 80px 24px, #fff 50%, transparent 51%), #000;
-    color: #ffd27a; border-color: #ffd27a; padding-left: 24px; }
-  .b88.spacecat::before { content: ""; position: absolute; left: 8px; top: 9px; width: 12px; height: 12px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ffd27a, #c46b00); }
-  .b88.spacecat::after { content: ""; position: absolute; left: 3px; top: 13px; width: 22px; height: 4px; border: 1px solid #ffe9b8; border-radius: 50%; transform: rotate(-18deg); }
-  @media (prefers-reduced-motion: reduce) { .b88.lost, .b88.stargazer::before { animation: none; } }
 
-  .linkme { margin-top: 16px; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .linkme { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
   .linkme img { width: 88px; height: 31px; image-rendering: pixelated; display: block; }
   .linkme code {
     flex: 1 1 260px;
@@ -238,16 +192,6 @@
   </div>
 
   <div class="box" id="link-me">
-    <div class="buttons">
-      <span class="b88 paws">powered<br>by cats</span>
-      <span class="b88 meow">meow</span>
-      <span class="b88 approved"><span>cat<br>approved</span></span>
-      <span class="b88 nodogs">no dogs<br>allowed</span>
-      <span class="b88 lost">lost in<br>space</span>
-      <span class="b88 stargazer">stargazer</span>
-      <span class="b88 houston">houston, we<br>have a<br>website</span>
-      <span class="b88 spacecat">space<br>cat</span>
-    </div>
     <div class="linkme">
       <img src="button.svg" width="88" height="31" alt="sif.cat">
       <code>&lt;a href="https://sif.cat"&gt;&lt;img src="https://sif.cat/button.svg" width="88" height="31" alt="sif.cat"&gt;&lt;/a&gt;</code>
